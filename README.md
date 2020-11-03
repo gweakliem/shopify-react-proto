@@ -10,9 +10,12 @@ not be verified errors" which were caused by the server setting cookies flagged 
 so the browser blocks those cookies. 
 
 1. I had to install next pinned to a specific canary revision to work around issues with 
-installing dependencies 
+installing dependencies. Also, I had to downgrade react to 16.9 due to compatibility issues with either 
+next-css or polaris (not sure which I didn't dig too deep).
+
 ```
 npm install --save react-dom next@"v9.5.6-canary.14"
+npm install react@"^16.9.0" --save
 ```
 1. The authentication step doesn't always work as documented. Eventually I installed without 
 issues, but these two articles shed some light if you run into the "Request origin could not be verified" 
