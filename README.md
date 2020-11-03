@@ -16,6 +16,7 @@ next-css or polaris (not sure which I didn't dig too deep).
 ```
 npm install --save react-dom next@"v9.5.6-canary.14"
 npm install react@"^16.9.0" --save
+npm install --save graphql@"^14.3.1"
 ```
 1. The authentication step doesn't always work as documented. Eventually I installed without 
 issues, but these two articles shed some light if you run into the "Request origin could not be verified" 
